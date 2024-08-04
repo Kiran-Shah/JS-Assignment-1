@@ -403,6 +403,11 @@ if (password !== "") {
     if (password.length > 5) {
         alert("OK");
     } else {
+
+
+
+
+        
         alert("Password must be greater than 5");
     }
 }
@@ -531,3 +536,94 @@ var pets = ["dog", "cat", "ox", "duck", "frog", "flea"];
 var reducedPets = pets.slice(3, 5); // ["duck", "frog"]
 
 //
+
+
+
+Chapter 17 - 20 (for Loops)
+1. Loop running 10 times:
+    
+    for (let i = 0; i < 10; i++) {
+        
+    }
+    
+
+2. For loop running 12 times with
+    for (let i = 0; i <= 11; i++) {
+    }
+    
+
+3. Missing characters:
+    
+    for(i=0;i<=4;i++)
+    
+
+4. For loop with a different counter name:
+    for (let count = 0; count < 100; count++) {
+    }
+   
+5. For loop with decrement:
+    for (let i = 3; i > 0; i--) {
+    }
+    
+
+6. Number of elements in an array:
+    
+    let count = array.length;
+
+7. Set a boolean flag:
+    let flag = true;
+    
+
+8. For loop limited by the number of array elements:
+    let pets = ["dog", "cat", "ox", "duck", "frog"];
+    for (let i = 0; i < pets.length; i++) {
+        
+    }
+
+9. For loop with break on second iteration:
+    
+    for (let i = 0; i < 10; i++) {
+        if (i === 1) {
+            alert(i);
+            break;
+        }
+    }
+
+10. Array of user names with prompt and for loop:
+    
+    let userNames = ["John", "Jane", "Doe"];
+    let firstName = prompt("Enter first name");
+
+    for (let i = 0; i < userNames.length; i++) {
+        if (firstName === userNames[i]) {
+            alert("Enter");
+            break;
+        }
+    }
+    if (!userNames.includes(firstName)) {
+        alert("Please write correct user name");
+    }
+    
+
+11. Complete code for match not found:
+    var matchFound = false;
+    for (var i = 0; i < list.length; i++) {
+        if (userInput === list[i]) {
+            alert("Match found");
+            matchFound = true;
+            break;
+        }
+    }
+    if (!matchFound) {
+        alert("No match found");
+    }
+
+12. Nested loops with concatenation:
+    let firstArr = ["a", "b", "c", "d", "e", "f"];
+    let secondArr = [1, 2, 3, 4, 5, 6];
+
+    for (let i = 0; i < firstArr.length; i++) {
+        for (let j = 0; j < secondArr.length; j++) {
+            console.log(firstArr[i] + secondArr[j]);
+        }
+    }
